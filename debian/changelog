@@ -1,6 +1,7 @@
 grub2-signed (1.93-galliumos0.1) bismuth; urgency=medium
 
   * Modify EFI path in grubx64.efi product
+  * Update link creation in debian/rules
 
  -- reynhout <reynhout@galliumos.org>  Sun, 01 Jul 2018 04:15:35 +0000
 
