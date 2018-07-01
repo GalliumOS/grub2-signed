@@ -14,6 +14,10 @@ config_item ()
     eval echo "\$$1"
 }
 
+## modify EFI path for GalliumOS
+sed -i "s/EFI\/ubuntu\x00\x00\x00\x00/EFI\/galliumos\x00/" \
+  /boot/efi/EFI/galliumos/grubx64.efi
+
 case $1 in
     configure)
 	bootloader_id="$(config_item GRUB_DISTRIBUTOR | tr A-Z a-z | \

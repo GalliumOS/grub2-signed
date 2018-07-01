@@ -1,3 +1,9 @@
+grub2-signed (1.93-galliumos0.1) bismuth; urgency=medium
+
+  * Modify EFI path in grubx64.efi product
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 01 Jul 2018 04:15:35 +0000
+
 grub2-signed (1.93) bionic; urgency=medium
 
   * Rebuild against grub2 2.02-2ubuntu8. (LP: #1752767)
