@@ -16,7 +16,7 @@ config_item ()
 
 ## modify EFI path for GalliumOS
 sed -i "s/EFI\/ubuntu\x00\x00\x00\x00/EFI\/galliumos\x00/" \
-  /boot/efi/EFI/galliumos/grubx64.efi
+  /usr/lib/grub/x86_64-efi-signed/grubx64.efi.signed
 
 case $1 in
     configure)
