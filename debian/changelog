@@ -1,6 +1,9 @@
 grub2-signed (1.93.13-galliumos0.2) bismuth; urgency=medium
 
   * Rebase on upstream grub-efi-amd64-signed (1.93.13+2.02-2ubuntu8.12)
+  * Verify GalliumOS changes
+    - Modify EFI path in grubx64.efi.signed product
+    - Update link creation in debian/rules
 
  -- reynhout <reynhout@galliumos.org>  Sun, 01 Jul 2018 04:15:35 +0000
 
