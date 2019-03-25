@@ -1,3 +1,98 @@
+grub2-signed (1.93.13-galliumos0.2) bismuth; urgency=medium
+
+  * Rebase on upstream grub-efi-amd64-signed (1.93.13+2.02-2ubuntu8.12)
+
+ -- reynhout <reynhout@galliumos.org>  Sun, 01 Jul 2018 04:15:35 +0000
+
+grub2-signed (1.93.13) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.12.
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Thu, 07 Feb 2019 19:28:09 -0500
+
+grub2-signed (1.93.12) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.11.
+    (LP: #1401532) (LP: #1814403) (LP: #1814575)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Tue, 05 Feb 2019 12:46:55 -0500
+
+grub2-signed (1.93.11) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.10.
+    (LP: #1789918) (LP: #1800722) (LP: #1812863)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Tue, 22 Jan 2019 11:45:06 -0500
+
+grub2-signed (1.93.10) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.9 (LP: #1784363) (LP: #1788727)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Thu, 08 Nov 2018 10:54:58 -0500
+
+grub2-signed (1.93.9) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.8 (LP: #1784363)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Thu, 25 Oct 2018 13:28:44 -0400
+
+grub2-signed (1.93.8) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.7 (LP: #1785033)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Thu, 11 Oct 2018 08:46:20 -0400
+
+grub2-signed (1.93.7) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.6 (LP: #1792575)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Thu, 27 Sep 2018 13:07:26 -0400
+
+grub2-signed (1.93.6) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.5 (LP: #788298)
+
+ -- dann frazier <dannf@ubuntu.com>  Tue, 18 Sep 2018 14:56:20 -0600
+
+grub2-signed (1.93.5) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.4 (LP: #1785859)
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Thu, 30 Aug 2018 16:22:15 +0200
+
+grub2-signed (1.93.4) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.3 and check kernel is signed on
+    amd64 EFI before installing grub (LP: #1786491).
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 13 Aug 2018 12:51:32 +0200
+
+grub2-signed (1.93.3) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.2. (LP: #1258597)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Tue, 17 Jul 2018 14:31:57 -0400
+
+grub2-signed (1.93.2) bionic; urgency=medium
+
+  * debian/control: add a dependency of grub-efi-amd64 | grub-pc to
+    grub-efi-amd64-signed to make sure the grub postinst is triggered even for
+    cases of old iso (without the fixed installer) installations with
+    automatic download of updates enabled (LP: #1780897).
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Tue, 10 Jul 2018 20:36:23 +0200
+
+grub2-signed (1.93.1) bionic; urgency=medium
+
+  * debian/control: switch the grub-efi-amd64 dependency of
+    grub-efi-amd64-signed to grub-efi-amd64-bin. (LP: #1778848)
+  * debian/grub-efi-amd64-signed.postinst: invoke grub-install with
+    --auto-nvram and pass the x86_64-efi target to it, making sure we always 
+    install the right target. (LP: #1778848)
+  * debian/control: rebuild against grub2 2.02-2ubuntu8.1.
+
+ -- Łukasz 'sil2100' Zemczak <lukasz.zemczak@ubuntu.com>  Wed, 27 Jun 2018 09:01:13 +0200
+
 grub2-signed (1.93-galliumos0.2) bismuth; urgency=medium
 
   * Modify EFI path in grubx64.efi.signed product
