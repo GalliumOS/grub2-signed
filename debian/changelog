@@ -1,11 +1,17 @@
-grub2-signed (1.93.19-galliumos1) bismuth; urgency=medium
+grub2-signed (1.93.20-galliumos1) bismuth; urgency=medium
 
-  * Rebase on upstream grub2-signed_1.93.19
+  * Rebase on upstream grub2-signed_1.93.20
   * Verify GalliumOS changes
     - Modify EFI path in grubx64.efi.signed product
     - Update link creation in debian/rules
 
  -- reynhout <reynhout@galliumos.org>  Mon, 30 Mar 2020 00:18:04 +0000
+
+grub2-signed (1.93.20) bionic; urgency=medium
+
+  * Rebuild against grub2 2.02-2ubuntu8.18.
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 24 Aug 2020 10:58:52 +0200
 
 grub2-signed (1.93.19) bionic; urgency=medium
 
